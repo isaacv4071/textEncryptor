@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Textos</title>
+    <link rel="shortcut icon" href="./static/img/logo.svg" />
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./static/img/logo.svg" alt="Logo" />
+      </nav>
+    </header>
+    <div class="container">
+      <div class="column">
+        <textarea
+          id="input-text"
+          rows="8"
+          placeholder="Ingrese su texto aquí"
+        ></textarea>
+        <p class="text">&#9888; Solo letras minúsculas y sin acentos</p>
+        <div class="button-container">
+          <button id="encrypt-btn">Encriptar</button>
+          <button id="decrypt-btn">Desencriptar</button>
+        </div>
+      </div>
+      <div class="column" id="content-result">
+        <div id="result-none">
+          <img src="./static/img/ilustracion.svg" alt="ilustracion" />
+          <h3>Ningún mensaje fue encontrado</h3>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div class="show-result-none" id="result-container">
+          <div id="container-result-none">
+            <textarea id="result-text" rows="3" readonly></textarea>
+            <button id="copy-btn">Copiar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

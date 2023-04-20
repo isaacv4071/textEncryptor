@@ -14,6 +14,10 @@ body {
 	line-height: 1.5;
 }
 
+main {
+	height: 100vh;
+}
+
 nav {
 	background-color: #f3f5fc;
 	display: flex;
@@ -176,6 +180,52 @@ button {
 	display: none;
 }
 
+/* Estilos para el footer */
+footer {
+	background-color: #f3f5fc;
+	color: #0a3871;
+	padding: 10px;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+}
+
+#name {
+	font-weight: bold;
+}
+
+/* Estilos para el contenedor del footer */
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Estilos para las redes sociales */
+.social-links {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.social-links li {
+	margin: 0 5px;
+}
+
+.social-links a {
+	color: #0a3871;
+	font-size: 1.2rem;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+.social-links a:hover {
+	color: #007bff;
+}
+
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 767px) {
 
@@ -212,5 +262,9 @@ button {
 
 	#copy-btn {
 		margin-top: 0;
+	}
+
+	.social-links li {
+		margin: 0 10px;
 	}
 }

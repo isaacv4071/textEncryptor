@@ -14,33 +14,50 @@
         <img src="./static/img/logo.svg" alt="Logo" />
       </nav>
     </header>
-    <div class="container">
-      <div class="column">
-        <textarea
-          id="input-text"
-          rows="8"
-          placeholder="Ingrese su texto aquí"
-        ></textarea>
-        <p class="text">&#9888; Solo letras minúsculas y sin acentos</p>
-        <div class="button-container">
-          <button id="encrypt-btn">Encriptar</button>
-          <button id="decrypt-btn">Desencriptar</button>
+    <main>
+      <div class="container">
+        <div class="column">
+          <textarea
+            id="input-text"
+            rows="8"
+            placeholder="Ingrese su texto aquí"
+          ></textarea>
+          <p class="text">&#9888; Solo letras minúsculas y sin acentos</p>
+          <div class="button-container">
+            <button id="encrypt-btn">Encriptar</button>
+            <button id="decrypt-btn">Desencriptar</button>
+          </div>
         </div>
-      </div>
-      <div class="column" id="content-result">
-        <div id="result-none">
-          <img src="./static/img/ilustracion.svg" alt="ilustracion" />
-          <h3>Ningún mensaje fue encontrado</h3>
-          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-        </div>
-        <div class="show-result-none" id="result-container">
-          <div id="container-result-none">
-            <textarea id="result-text" rows="3" readonly></textarea>
-            <button id="copy-btn">Copiar</button>
+        <div class="column" id="content-result">
+          <div id="result-none">
+            <img src="./static/img/ilustracion.svg" alt="ilustracion" />
+            <h3>Ningún mensaje fue encontrado</h3>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+          <div class="show-result-none" id="result-container">
+            <div id="container-result-none">
+              <textarea id="result-text" rows="3" readonly></textarea>
+              <button id="copy-btn">Copiar</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <p>&copy;2023 - Todos los derechos reservados</p>
+        <div id="name">Isaacv4071</div>
+        <ul class="social-links">
+          <li><a href="https://github.com/isaacv4071">GitHub</a></li>
+          <li>
+            <a href="https://www.instagram.com/isaacv4071/"
+              >Instagram</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
     <script src="static/js/main.js"></script>
   </body>
 </html>

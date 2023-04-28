@@ -267,4 +267,8 @@ footer p {
 	.social-links li {
 		margin: 0 10px;
 	}
+
+	.footer-container{
+		margin-top: 100px
+	}
 }
